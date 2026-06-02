@@ -1,9 +1,11 @@
 const Navbar = () => {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
   return (
     <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/20 transition-all duration-300 ease-in-out">
       <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-stack-md max-w-screen-2xl mx-auto">
         <a
-          href="/"
+          href={`${base}/`}
           aria-label="KANI Home"
           class="flex items-center gap-3 no-underline group cursor-pointer   "
         >
@@ -30,13 +32,13 @@ const Navbar = () => {
           </a>
           <a
             class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 px-3 py-2 rounded-DEFAULT"
-            href="/#methodology-section"
+            href={`${base}/#methodology-section`}
           >
             Methodology
           </a>
           <a
             class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 px-3 py-2 rounded-DEFAULT"
-            href="/contact"
+            href={`${base}/contact`}
           >
             Contact Us
           </a>
