@@ -34,12 +34,12 @@ export function App() {
     <>
       <Navbar />
       <Router onChange={handleRouteUpdate}>
-        <Homa path="${base}/" />
-        <Privacy path="${base}/privacypolicy" />
-        <Terms path="${base}/terms" />
-        <CookiePolicy path="${base}/cookiepolicy" />
-        <Contact path="${base}/contact" />
-        <RefundPolicy path="${base}/refundpolicy" />
+        <Homa path={`${base}/`} />
+        <Privacy path={`${base}/privacypolicy`} />
+        <Terms path={`${base}/terms`} />
+        <CookiePolicy path={`${base}/cookiepolicy`} />
+        <Contact path={`${base}/contact`} />
+        <RefundPolicy path={`${base}/refundpolicy`} />
         <Default default />
       </Router>
       <Footer />
