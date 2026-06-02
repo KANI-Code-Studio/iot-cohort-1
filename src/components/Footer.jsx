@@ -2,6 +2,7 @@ import { h } from "preact";
 import { Link } from "preact-router/match";
 
 const Footer = () => {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   // Define the active styles once to keep your JSX clean
   // Using '!' ensures these styles override the base text colors
   // The arbitrary [text-shadow:...] creates the glowing effect
@@ -15,7 +16,7 @@ const Footer = () => {
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-margin-mobile md:px-margin-desktop gap-10 max-w-7xl mx-auto">
         <div class="flex flex-col gap-3">
           <a
-            href="/"
+            href={`${base}/`}
             title="KANI Code Studio Home"
             class="font-headline-md text-xl text-on-surface font-semibold tracking-tight flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
@@ -38,7 +39,7 @@ const Footer = () => {
           <Link
             class={baseLinkStyles}
             activeClassName={activeStyles}
-            href="/privacypolicy"
+            href={`${base}/privacypolicy`}
             title="Read our Privacy Policy"
           >
             Privacy Policy
@@ -46,7 +47,7 @@ const Footer = () => {
           <Link
             class={baseLinkStyles}
             activeClassName={activeStyles}
-            href="/terms"
+            href={`${base}/terms`}
             title="Read our Terms of Service"
           >
             Terms of Service
@@ -54,7 +55,7 @@ const Footer = () => {
           <Link
             class={baseLinkStyles}
             activeClassName={activeStyles}
-            href="/cookiepolicy"
+            href={`${base}/cookiepolicy`}
             title="Read our Cookie Policy"
           >
             Cookie Policy
@@ -62,7 +63,7 @@ const Footer = () => {
           <Link
             class={baseLinkStyles}
             activeClassName={activeStyles}
-            href="/refundpolicy"
+            href={`${base}/refundpolicy`}
             title="Read our Refund Policy"
           >
             Refund Policy
@@ -70,7 +71,7 @@ const Footer = () => {
           <Link
             class={baseLinkStyles}
             activeClassName={activeStyles}
-            href="/contact"
+            href={`${base}/contact`}
             title="Contact our Support Team"
           >
             Contact Support
