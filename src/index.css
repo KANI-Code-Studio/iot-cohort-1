@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+.glow-hover:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 240, 255, 0.05);
+  border-color: rgba(0, 240, 255, 0.4);
+}
+
+/* Custom UI FX */
+.glass-panel {
+  background: rgba(4, 19, 41, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.cyber-card {
+  background-color: #041329;
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cyber-card:hover {
+  border-color: rgba(0, 240, 255, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 240, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+.tech-list-item::before {
+  content: ">";
+  color: #00f0ff;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  margin-right: 16px;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.elite-glow {
+  box-shadow:
+    0 0 30px rgba(121, 255, 91, 0.15),
+    inset 0 0 20px rgba(121, 255, 91, 0.05);
+}
+
+.premium-surface {
+  background: linear-gradient(180deg, #0d1c32 0%, #041329 100%);
+  border: 1px solid #27354c; /* surface-variant */
+  box-shadow:
+    0 4px 24px -4px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+/* Primary CTA Button */
+.btn-primary {
+  background-color: #dbfcff; /* primary */
+  color: #002022; /* on-primary-fixed */
+  border: none;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* High-end visual markers */
+.marker-success {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid #79ff5b; /* secondary-fixed */
+  background: linear-gradient(
+    90deg,
+    rgba(121, 255, 91, 0.05) 0%,
+    transparent 100%
+  );
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+.marker-error {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid #ffb4ab; /* error */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 180, 171, 0.05) 0%,
+    transparent 100%
+  );
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+/* 1. Glitch Effect */
+.glitch-main {
+  position: relative;
+  animation: glitch-anim 4s infinite linear alternate-reverse;
+}
+@keyframes glitch-anim {
+  0%,
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+  }
+  35% {
+    transform: none;
+  }
+  52% {
+    transform: none;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+  }
+  50% {
+    text-shadow:
+      2px 0 #00f0ff,
+      -2px 0 #39ff14;
+  }
+  72% {
+    transform: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.glitch-text {
+  text-shadow:
+    0.05em 0 0 rgba(0, 240, 255, 0.75),
+    -0.025em -0.05em 0 rgba(57, 255, 20, 0.75),
+    0.025em 0.05em 0 rgba(215, 255, 197, 0.75);
+  animation: glitch 500ms infinite;
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background-color: #00f0ff;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* 3. Data Stream Background */
+.data-stream {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.stream-col {
+  position: absolute;
+  top: -100px;
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, #00f0ff);
+  opacity: 0.15;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+
+/* 4. Button Scanner Effect */
+.btn-scanner {
+  position: relative;
+  overflow: hidden;
+}
+.btn-scanner::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: none;
+}
+.btn-scanner:hover::after {
+  left: 150%;
+  transition: left 0.6s ease-in-out;
+}
+
+/* 5. Floating Bits Particles */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #00f0ff;
+  opacity: 0;
+  pointer-events: none;
+  animation: float-particle 4s infinite ease-in-out;
+}
+@keyframes float-particle {
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1);
+    opacity: 0;
+  }
+}
