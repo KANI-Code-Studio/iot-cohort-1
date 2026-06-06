@@ -25,7 +25,7 @@ const Navbar = () => {
         <div class="hidden md:flex items-center gap-gutter">
           <a
             class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-high/50 px-3 py-2 rounded-DEFAULT"
-            href="https://app.notion.com/p/Full-Stack-IoT-Bootcamp-362c5729e6cf804d8a2ce03424954788" target="_blank" 
+            href="https://ka9i.notion.site/Full-Stack-IoT-Bootcamp-362c5729e6cf804d8a2ce03424954788" target="_blank" 
 
           >
             Curriculum
