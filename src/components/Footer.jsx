@@ -21,7 +21,7 @@ const Footer = () => {
             class="font-headline-md text-xl text-on-surface font-semibold tracking-tight flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <div
-              class="h-8 w-8 bg-primary-container [mask-image:url('./kani_icon_black.svg')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]"
+              class="h-8 w-8 bg-primary-container [mask-image:url('/course/iot-cohort-1/kani_icon_black.svg')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]"
               aria-hidden="true"
             ></div>
             KANI Code Studio
