@@ -12,7 +12,7 @@ const Navbar = () => {
           {/* LOGO ICON */}
           {/* Note: Gave it a specific width (w-8) so the mask has a canvas to render on */}
           <div
-            class="h-12 w-12 bg-[#dbfcff] [mask-image:url('./kani_icon_black.svg')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat] "
+            class="h-12 w-12 bg-[#dbfcff] [mask-image:url('/course/iot-cohort-1/kani_icon_black.svg')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat] "
             aria-hidden="true"
           ></div>
 
