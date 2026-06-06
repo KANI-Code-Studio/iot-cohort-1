@@ -56,7 +56,7 @@ const Homa = () => {
                 class="inline-flex justify-center items-center border border-primary-container/30 text-primary-container font-label-caps text-label-caps px-8 py-4 rounded hover:bg-primary-container/5 hover:border-primary-container transition-all duration-300 tracking-widest uppercase"
                 onClick={() => {
                   window.open(
-                    "https://app.notion.com/p/Full-Stack-IoT-Bootcamp-362c5729e6cf804d8a2ce03424954788",
+                    "https://ka9i.notion.site/Full-Stack-IoT-Bootcamp-362c5729e6cf804d8a2ce03424954788",
                     "_blank",
                   );
                 }}
